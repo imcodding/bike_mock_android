@@ -14,15 +14,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linear2" />
+        app:layout_constraintTop_toBottomOf="@+id/linear_rental_office" />
 
     <Button
         android:id="@+id/btn_get"
-        android:layout_width="200dp"
+        android:layout_width="@dimen/btn_lent_height"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/btn_lent_margin_bottom"
         android:background="@drawable/circle"
-        android:backgroundTint="#4C5365"
+        android:backgroundTint="@color/bike_main"
         android:onClick="mainOnClick"
         android:text="대여하기"
         android:textColor="@color/white"
@@ -33,18 +33,18 @@
 
     <ImageView
         android:id="@+id/iv_title_image"
-        android:layout_width="280dp"
-        android:layout_height="90dp"
+        android:layout_width="@dimen/img_bike_title_width"
+        android:layout_height="@dimen/img_bike_title_height"
         android:src="@drawable/seoul_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linear2"
+        android:id="@+id/linear_rental_office"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#3F4553"
+        android:layout_height="@dimen/rental_office_height"
+        android:background="@color/bike_main"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,21 +66,21 @@
 
             <ImageView
                 android:id="@+id/iv_circle_green"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="@dimen/rental_office_type_size"
+                android:layout_height="@dimen/rental_office_type_size"
                 android:layout_centerVertical="true"
                 android:background="@drawable/circle"
-                android:backgroundTint="#2AAF30" />
+                android:backgroundTint="@color/green" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="11dp"
+                android:layout_marginLeft="@dimen/rental_office_text_margin_left"
                 android:layout_toRightOf="@+id/iv_circle_green"
                 android:text="LCD형, QR형\n따릉이 반납가능"
                 android:textColor="@color/white"
-                android:textSize="10sp" />
+                android:textSize="@dimen/rental_office_text_size" />
 
         </RelativeLayout>
 
@@ -91,8 +91,8 @@
 
             <ImageView
                 android:id="@+id/iv_circle_yellow"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="@dimen/rental_office_type_size"
+                android:layout_height="@dimen/rental_office_type_size"
                 android:layout_centerVertical="true"
                 android:background="@drawable/circle"
                 android:backgroundTint="#FFC107" />
@@ -101,11 +101,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="11dp"
+                android:layout_marginLeft="@dimen/rental_office_text_margin_left"
                 android:layout_toRightOf="@+id/iv_circle_yellow"
                 android:text="QR형 뉴따릉이 전용\n(LCD형 반납불가)"
                 android:textColor="@color/white"
-                android:textSize="10sp" />
+                android:textSize="@dimen/rental_office_text_size" />
 
         </RelativeLayout>
     </LinearLayout>
@@ -113,7 +113,7 @@
     <LinearLayout
         android:id="@+id/linear"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="@dimen/bike_type_height"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -123,78 +123,78 @@
             android:id="@+id/tv_first"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="1dp"
+            android:layout_marginRight="@dimen/bike_type_text_margin_right"
             android:layout_weight="1"
-            android:background="#4C5365"
+            android:background="@color/bike_main"
             android:gravity="center"
             android:onClick="mainOnClick"
             android:text="전체"
             android:textColor="#2AAF30"
-            android:textSize="14sp" />
+            android:textSize="@dimen/bike_type_text_size" />
 
         <TextView
             android:id="@+id/tv_second"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="1dp"
+            android:layout_marginRight="@dimen/bike_type_text_margin_right"
             android:layout_weight="1"
-            android:background="#4C5365"
+            android:background="@color/bike_main"
             android:gravity="center"
             android:onClick="mainOnClick"
             android:text="LCD형\n 따릉이"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="@dimen/bike_type_text_size" />
 
         <TextView
             android:id="@+id/tv_third"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#4C5365"
+            android:background="@color/bike_main"
             android:gravity="center"
             android:onClick="mainOnClick"
             android:text="QR형\n 따릉이"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="@dimen/bike_type_text_size" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linear_right_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="@dimen/btn_right_margin_right"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linear2">
+        app:layout_constraintTop_toBottomOf="@+id/linear_rental_office">
 
         <ImageView
             android:id="@+id/iv_search"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="15dp"
+            android:layout_width="@dimen/btn_right_size"
+            android:layout_height="@dimen/btn_right_size"
+            android:layout_marginBottom="@dimen/btn_right_margin_bottom"
             android:background="@drawable/circle"
             android:backgroundTint="@color/white"
             android:onClick="mainOnClick"
-            android:padding="10dp"
+            android:padding="@dimen/btn_right_padding"
             android:src="@drawable/btn_search" />
 
         <ImageView
             android:id="@+id/iv_refresh"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="15dp"
+            android:layout_width="@dimen/btn_right_size"
+            android:layout_height="@dimen/btn_right_size"
+            android:layout_marginBottom="@dimen/btn_right_margin_bottom"
             android:background="@drawable/circle"
             android:backgroundTint="@color/white"
             android:onClick="mainOnClick"
-            android:padding="10dp"
+            android:padding="@dimen/btn_right_padding"
             android:src="@drawable/btn_refresh" />
 
         <ImageView
             android:id="@+id/iv_favorite"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="15dp"
+            android:layout_width="@dimen/btn_right_size"
+            android:layout_height="@dimen/btn_right_size"
+            android:layout_marginBottom="@dimen/btn_right_padding"
             android:background="@drawable/circle"
             android:backgroundTint="@color/white"
             android:onClick="mainOnClick"
@@ -202,9 +202,9 @@
 
         <ImageView
             android:id="@+id/iv_info"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="15dp"
+            android:layout_width="@dimen/btn_right_size"
+            android:layout_height="@dimen/btn_right_size"
+            android:layout_marginBottom="@dimen/btn_right_margin_bottom"
             android:background="@drawable/circle"
             android:backgroundTint="@color/white"
             android:onClick="mainOnClick"
@@ -213,10 +213,10 @@
 
         <TextView
             android:id="@+id/tv_description"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="@dimen/btn_right_size"
+            android:layout_height="@dimen/btn_right_size"
             android:background="@drawable/circle"
-            android:backgroundTint="#FFEB3B"
+            android:backgroundTint="@color/desc_info"
             android:gravity="center"
             android:onClick="mainOnClick"
             android:padding="5dp"

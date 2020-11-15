@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main -->
+    <dimen name="btn_right_size">45dp</dimen>
+    <dimen name="btn_right_padding">10dp</dimen>
+    <dimen name="btn_right_margin_right">10dp</dimen>
+    <dimen name="btn_right_margin_bottom">15dp</dimen>
+    <dimen name="btn_lent_height">200dp</dimen>
+    <dimen name="btn_lent_margin_bottom">10dp</dimen>
+    <dimen name="img_bike_title_width">280dp</dimen>
+    <dimen name="img_bike_title_height">90dp</dimen>
+    <dimen name="rental_office_height">45dp</dimen>
+    <dimen name="rental_office_type_size">20dp</dimen>
+    <dimen name="rental_office_text_size">10sp</dimen>
+    <dimen name="rental_office_text_margin_left">11dp</dimen>
+    <dimen name="bike_type_height">55dp</dimen>
+    <dimen name="bike_type_text_margin_right">1dp</dimen>
+    <dimen name="bike_type_text_size">14sp</dimen>
+
+    <!-- bike list -->
+    <dimen name="search_edit_height">40dp</dimen>
+    <dimen name="search_edit_margin">20dp</dimen>
+    <dimen name="search_edit_padding_left">15dp</dimen>
+    <dimen name="search_edit_text_size">12sp</dimen>
+
+    <!-- bike list item -->
+    <dimen name="item_linear_padding_horizontal">20dp</dimen>
+    <dimen name="item_linear_padding_vertical">10dp</dimen>
+    <dimen name="item_division_height">1dp</dimen>
+    <dimen name="item_division_margin_top">10dp</dimen>
+    <dimen name="rental_office_name_text_size">16sp</dimen>
+    <dimen name="bike_count_text_size">14sp</dimen>
+    <dimen name="bike_count_text_margin_top">10dp</dimen>
+
+
+</resources>

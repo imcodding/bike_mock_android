@@ -9,5 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#2AAF30</color>
 
-
+    <color name="bike_main">#3F4553</color>
+    <color name="bike_search_text">#4C5365</color>
+    <color name="desc_info">#FFEB3B</color>
+    <color name="gray">#b4b4b4</color>
 </resources>

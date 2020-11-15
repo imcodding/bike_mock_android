@@ -3,21 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".BikeListFragment">
 
     <EditText
         android:id="@+id/edit_search"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/search_edit_height"
         android:singleLine="true"
         android:imeOptions="actionDone"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/search_edit_margin"
         android:background="@drawable/circle_search"
         android:hint="원하시는 지역이 어디신가요?"
-        android:paddingLeft="15dp"
-        android:textSize="12sp" />
+        android:paddingLeft="@dimen/search_edit_padding_left"
+        android:textSize="@dimen/search_edit_text_size" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_bike_list"
