@@ -2,3 +2,5 @@
 This project imitated a bikeseoul.
 
 I used a kakao map API and public data.
+
+When requesting data, retrofit was used.
