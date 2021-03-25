@@ -1,20 +1,20 @@
 
-#Description
+# Description
 서울 자전거 따릉이앱 일부를 클론코딩.
 
 
-#기술스택
+# Stack
 - JAVA(MVP패턴 적용)
 - REST API
 - Retrofit & Okhttp
 - 공공데이터 API
 
 
-#라이브러리
+# Library
 kakao SDK (카카오 맵 사용)
 
 
-#참고
+# Issue
 공개 데이터는 한 달 동안 사용할 수 있습니다.
 
 
